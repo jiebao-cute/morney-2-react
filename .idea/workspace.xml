@@ -10,14 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb5471e6-6c8f-4691-b64e-7fcb5862c011" name="Default Changelist" comment="删除没有用的文件">
-      <change afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+    <list default="true" id="cb5471e6-6c8f-4691-b64e-7fcb5862c011" name="Default Changelist" comment="React Router CRM  和flex布局来定位导航栏">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +45,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611122385164</updated>
       <workItem from="1611122386754" duration="3842000" />
-      <workItem from="1611127188177" duration="9248000" />
+      <workItem from="1611127188177" duration="10681000" />
     </task>
     <task id="LOCAL-00001" summary="更新index.html">
       <created>1611127273185</created>
@@ -73,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611135235336</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="React Router CRM  和flex布局来定位导航栏">
+      <created>1611155911333</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611155911333</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,7 +96,8 @@
     <MESSAGE value="更新index.html" />
     <MESSAGE value="配置css 和JS" />
     <MESSAGE value="删除没有用的文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除没有用的文件" />
+    <MESSAGE value="React Router CRM  和flex布局来定位导航栏" />
+    <option name="LAST_COMMIT_MESSAGE" value="React Router CRM  和flex布局来定位导航栏" />
   </component>
   <component name="WindowStateProjectService">
     <state x="534" y="38" key="#Inspections" timestamp="1611127843839">
@@ -117,9 +120,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="204" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1611154820806" />
-    <state x="528" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1611131095606">
+    <state x="529" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1611156267674">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="528" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1611131095606" />
+    <state x="529" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1611156267674" />
   </component>
 </project>
