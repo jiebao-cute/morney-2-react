@@ -15,6 +15,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../morney" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -26,7 +27,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611122385164</updated>
-      <workItem from="1611122386754" duration="2963000" />
+      <workItem from="1611122386754" duration="3842000" />
     </task>
     <servers />
   </component>
@@ -38,5 +39,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="687" y="138" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1611125237851" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1611127174042">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1611127174042" />
   </component>
 </project>
