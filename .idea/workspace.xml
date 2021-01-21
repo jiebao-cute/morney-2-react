@@ -10,11 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb5471e6-6c8f-4691-b64e-7fcb5862c011" name="Default Changelist" comment="配置loder和搞定三个icons">
-      <change afterPath="$PROJECT_DIR$/src/components/Icon.tsx" afterDir="false" />
+    <list default="true" id="cb5471e6-6c8f-4691-b64e-7fcb5862c011" name="Default Changelist" comment="Icon重复代码模块化">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Icon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/icons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../morney" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.css" />
     <property name="ts.external.directory.path" value="C:\Users\jiebao\jirengu\morney-2\node_modules\typescript\lib" />
@@ -52,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611122385164</updated>
       <workItem from="1611122386754" duration="3842000" />
-      <workItem from="1611127188177" duration="21128000" />
+      <workItem from="1611127188177" duration="22386000" />
     </task>
     <task id="LOCAL-00001" summary="更新index.html">
       <created>1611127273185</created>
@@ -124,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611206764406</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Icon重复代码模块化">
+      <created>1611215129968</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611215129968</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +160,8 @@
     <MESSAGE value="引入图片" />
     <MESSAGE value="yarn eject" />
     <MESSAGE value="配置loder和搞定三个icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置loder和搞定三个icons" />
+    <MESSAGE value="Icon重复代码模块化" />
+    <option name="LAST_COMMIT_MESSAGE" value="Icon重复代码模块化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="534" y="38" key="#Inspections" timestamp="1611127843839">
@@ -167,10 +176,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="152" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1611135059659" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1611127174042">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1611215393593">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1611127174042" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1611215393593" />
     <state x="204" y="0" key="SettingsEditor" timestamp="1611154820806">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
