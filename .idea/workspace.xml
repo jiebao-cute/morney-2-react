@@ -10,11 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb5471e6-6c8f-4691-b64e-7fcb5862c011" name="Default Changelist" comment="行高和阴影">
-      <change afterPath="$PROJECT_DIR$/src/components/Nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+    <list default="true" id="cb5471e6-6c8f-4691-b64e-7fcb5862c011" name="Default Changelist" comment="引入图片">
+      <change afterPath="$PROJECT_DIR$/src/icons/chart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/money.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/tag.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,11 +32,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/icons" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.css" />
     <property name="ts.external.directory.path" value="C:\Users\jiebao\jirengu\morney-2\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jiebao\jirengu\morney-2\src\icons" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -47,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611122385164</updated>
       <workItem from="1611122386754" duration="3842000" />
-      <workItem from="1611127188177" duration="12337000" />
+      <workItem from="1611127188177" duration="14032000" />
     </task>
     <task id="LOCAL-00001" summary="更新index.html">
       <created>1611127273185</created>
@@ -91,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611157454566</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="模块化Nav标签">
+      <created>1611158712780</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611158712780</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +127,9 @@
     <MESSAGE value="React Router CRM  和flex布局来定位导航栏" />
     <MESSAGE value="解决字体问题，引用黑体" />
     <MESSAGE value="行高和阴影" />
-    <option name="LAST_COMMIT_MESSAGE" value="行高和阴影" />
+    <MESSAGE value="模块化Nav标签" />
+    <MESSAGE value="引入图片" />
+    <option name="LAST_COMMIT_MESSAGE" value="引入图片" />
   </component>
   <component name="WindowStateProjectService">
     <state x="534" y="38" key="#Inspections" timestamp="1611127843839">
@@ -138,9 +152,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="204" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1611154820806" />
-    <state x="529" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1611156267674">
+    <state x="529" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1611201743067">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="529" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1611156267674" />
+    <state x="529" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1611201743067" />
   </component>
 </project>
