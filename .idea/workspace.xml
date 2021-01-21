@@ -10,11 +10,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb5471e6-6c8f-4691-b64e-7fcb5862c011" name="Default Changelist" comment="引入图片">
-      <change afterPath="$PROJECT_DIR$/src/icons/chart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/money.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/tag.svg" afterDir="false" />
+    <list default="true" id="cb5471e6-6c8f-4691-b64e-7fcb5862c011" name="Default Changelist" comment="yarn eject">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611122385164</updated>
       <workItem from="1611122386754" duration="3842000" />
-      <workItem from="1611127188177" duration="14032000" />
+      <workItem from="1611127188177" duration="17605000" />
     </task>
     <task id="LOCAL-00001" summary="更新index.html">
       <created>1611127273185</created>
@@ -103,7 +106,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611158712780</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="引入图片">
+      <created>1611201928746</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611201928747</updated>
+    </task>
+    <task id="LOCAL-00009" summary="yarn eject">
+      <created>1611202201163</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611202201163</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +146,8 @@
     <MESSAGE value="行高和阴影" />
     <MESSAGE value="模块化Nav标签" />
     <MESSAGE value="引入图片" />
-    <option name="LAST_COMMIT_MESSAGE" value="引入图片" />
+    <MESSAGE value="yarn eject" />
+    <option name="LAST_COMMIT_MESSAGE" value="yarn eject" />
   </component>
   <component name="WindowStateProjectService">
     <state x="534" y="38" key="#Inspections" timestamp="1611127843839">
