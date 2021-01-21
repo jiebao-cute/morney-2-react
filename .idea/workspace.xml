@@ -11,7 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb5471e6-6c8f-4691-b64e-7fcb5862c011" name="Default Changelist" comment="Icon重复代码模块化">
-      <change afterPath="$PROJECT_DIR$/src/components/Layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Money.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/NoMatch.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Statistics.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Tags.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
@@ -52,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611122385164</updated>
       <workItem from="1611122386754" duration="3842000" />
-      <workItem from="1611127188177" duration="25916000" />
+      <workItem from="1611127188177" duration="26611000" />
     </task>
     <task id="LOCAL-00001" summary="更新index.html">
       <created>1611127273185</created>
@@ -138,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611216432921</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="创建Layout组件">
+      <created>1611219961302</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1611219961302</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +178,8 @@
     <MESSAGE value="配置loder和搞定三个icons" />
     <MESSAGE value="Icon重复代码模块化" />
     <MESSAGE value="创建ICon组件" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建ICon组件" />
+    <MESSAGE value="创建Layout组件" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建Layout组件" />
   </component>
   <component name="WindowStateProjectService">
     <state x="534" y="38" key="#Inspections" timestamp="1611127843839">
