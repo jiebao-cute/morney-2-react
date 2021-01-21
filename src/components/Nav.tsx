@@ -10,7 +10,8 @@ box-shadow: 0 0 3px rgba(0,0,0,0.25);
 display: flex;
   >li{
   width: 33.3333%;
-  text-align: center;
+   text-align: center;
+  >a{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,6 +20,8 @@ display: flex;
   .icon{
   width: 24px;
   height: 24px;
+  }
+  
   }
   }
 }
@@ -29,16 +32,19 @@ const Nav =() =>{
     <NavWrapper>
       <ul>
         <li>
-          <Icon name="money"/>
-          <Link to="/money">记账</Link>
+          <Link to="/money">
+            <Icon name="money"/>记账
+          </Link>
         </li>
         <li>
-         <Icon name="tag"/>
-          <Link to="/tags">标签</Link>
+          <Link to="/tags">
+            <Icon name="tag"/>标签
+          </Link>
         </li>
         <li>
-          <Icon name="chart"/>
-          <Link to="/statistics">统计</Link>
+          <Link to="/statistics">
+            <Icon name="chart"/>统计
+          </Link>
         </li>
       </ul>
     </NavWrapper>

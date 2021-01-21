@@ -11,13 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb5471e6-6c8f-4691-b64e-7fcb5862c011" name="Default Changelist" comment="Icon重复代码模块化">
-      <change afterPath="$PROJECT_DIR$/src/views/Money.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/NoMatch.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Statistics.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Tags.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +33,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../morney" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.css" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="ts.external.directory.path" value="C:\Users\jiebao\jirengu\morney-2\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -55,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611122385164</updated>
       <workItem from="1611122386754" duration="3842000" />
-      <workItem from="1611127188177" duration="26611000" />
+      <workItem from="1611127188177" duration="27453000" />
     </task>
     <task id="LOCAL-00001" summary="更新index.html">
       <created>1611127273185</created>
@@ -148,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611219961302</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="创建Views目录">
+      <created>1611220598008</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1611220598008</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +182,8 @@
     <MESSAGE value="Icon重复代码模块化" />
     <MESSAGE value="创建ICon组件" />
     <MESSAGE value="创建Layout组件" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建Layout组件" />
+    <MESSAGE value="创建Views目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建Views目录" />
   </component>
   <component name="WindowStateProjectService">
     <state x="534" y="38" key="#Inspections" timestamp="1611127843839">
@@ -198,10 +202,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1611215393593" />
-    <state x="204" y="0" key="SettingsEditor" timestamp="1611154820806">
+    <state x="110" y="0" key="SettingsEditor" timestamp="1611221074472">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="204" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1611154820806" />
+    <state x="110" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1611221074472" />
     <state x="529" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1611201743067">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
