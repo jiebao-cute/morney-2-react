@@ -4,7 +4,7 @@ import React from 'react'
 import Icon from './Icon';
 
 const NavWrapper = styled.div`
-background: white;
+background: #ffd700;
 line-height: 24px;
 box-shadow: 0 0 3px rgba(0,0,0,0.25);
 >ul{
@@ -13,21 +13,21 @@ display: flex;
   width: 33.3333%;
    text-align: center;
   >a{
-  color: grey;
+  color:#d0ad00;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column; 
   padding: 4px 0;
   .icon{
-  fill: grey;
+  fill: #d0ad00;
   width: 24px;
   height: 24px;
   }
   &.selected{
-  color: cadetblue;
+  color: #333;
   .icon{
-  fill:cadetblue;
+  fill:#333;
   }
   } 
   }
