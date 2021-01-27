@@ -13,7 +13,8 @@
     <list default="true" id="cb5471e6-6c8f-4691-b64e-7fcb5862c011" name="Default Changelist" comment="Icon重复代码模块化">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Money.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Money.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611122385164</updated>
       <workItem from="1611122386754" duration="3842000" />
-      <workItem from="1611127188177" duration="34521000" />
+      <workItem from="1611127188177" duration="37935000" />
     </task>
     <task id="LOCAL-00001" summary="更新index.html">
       <created>1611127273185</created>
@@ -173,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611224358339</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="money页面内容填充完">
+      <created>1611733255747</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1611733255747</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +216,8 @@
     <MESSAGE value="修复Nav点击区域过小的问题" />
     <MESSAGE value="当前路由图标自动高亮" />
     <MESSAGE value="更改颜色" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改颜色" />
+    <MESSAGE value="money页面内容填充完" />
+    <option name="LAST_COMMIT_MESSAGE" value="money页面内容填充完" />
   </component>
   <component name="WindowStateProjectService">
     <state x="534" y="38" key="#Inspections" timestamp="1611127843839">
