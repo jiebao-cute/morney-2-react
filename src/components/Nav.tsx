@@ -16,7 +16,7 @@ display: flex;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column; 
   padding: 4px 0;
   .icon{
   fill: grey;
