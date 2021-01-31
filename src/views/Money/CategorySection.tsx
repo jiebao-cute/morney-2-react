@@ -25,18 +25,18 @@ font-size: 24px;
 }
 `
 const CategorySection:React.FC = () =>{
+  const [categoryList] = useState<('-'|'+')[]>(['-','+'])
   const [category,setCategory] = useState('-')
+  const categoryMap = {'-':'支出',"+":'收入'};
   return(
     <Wrapper>
       <ul>
-        <li className={category === '-' ? 'selected' : ''}
-        onClick={()=>{setCategory('-');}}
-        >支出
-        </li>
-        <li className={category === '+' ? 'selected' : ''}
-        onClick={()=>{setCategory('+');}}
-        >收入
-        </li>
+        {categoryList.map(c=>
+          <li className={category === c ? 'selected' : ''}
+              onClick={()=>{setCategory(c);}}
+          >{categoryMap[c]}
+          </li>
+        )}
       </ul>
     </Wrapper>
   )
