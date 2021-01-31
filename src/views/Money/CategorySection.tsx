@@ -25,9 +25,11 @@ font-size: 24px;
 }
 `
 const CategorySection:React.FC = () =>{
-  const [categoryList] = useState<('-'|'+')[]>(['-','+'])
-  const [category,setCategory] = useState('-')
   const categoryMap = {'-':'支出',"+":'收入'};
+  type keys = keyof typeof categoryMap;
+  const [categoryList] = useState<keys[]>(['-','+'])
+  const [category,setCategory] = useState('-')
+
   return(
     <Wrapper>
       <ul>
