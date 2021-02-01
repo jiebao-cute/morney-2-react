@@ -1,11 +1,12 @@
 import {useState} from 'react';
+import {createId} from 'lib/createId';
 
 const useTags =() =>{
   const [tags,setTags] = useState<{id:number ; name:string}[]>([
-    {id:1,name:'衣服'},
-    {id:2,name:'吃饭饭'},
-    {id:3,name:'家庭消费'},
-    {id:4,name:'粗去玩~'},
+    {id:createId(),name:'衣服'},
+    {id:createId(),name:'吃饭饭'},
+    {id:createId(),name:'家庭消费'},
+    {id:createId(),name:'粗去玩~'},
     ]);
   return {tags,setTags}
 }
