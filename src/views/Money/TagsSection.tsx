@@ -20,7 +20,7 @@ padding: 12px 16px;
     margin: 8px 12px;
     &.selected{
     color: white;
-    background: darkorange}
+    background: #f60}
     }
     }
   }
