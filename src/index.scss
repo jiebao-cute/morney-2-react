@@ -16,8 +16,8 @@ body{
   line-height: 1.2;//行高
   background: #f5f5f5;
 }
-button{
-  font-family: inherit;
+button,input{
+  font:inherit;
 }
 :focus{
   outline: none;//去掉input选中时候的黄色边框

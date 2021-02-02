@@ -8,10 +8,11 @@ import {Button} from 'components/Button';
 const TagList = styled.ol`
 font-size: 18px;
 background: #ffe474;
+border-radius: 5%;
  >li{ 
   border-bottom: 1px solid whitesmoke;
   line-height: 20px;
-  margin-left: 16px;
+  margin-left: 16px; 
   >a{
   padding: 12px 16px 12px 0;
   display: flex;

@@ -17,6 +17,21 @@ line-height: 20px;
 padding: 14px;
 background: #ffd700;
 `
+const InputWrapper = styled.div`
+ background: #ffe474;
+ padding: 0 16px;
+ margin-top: 8px;
+ border-radius: 5%;
+`
+const  Space = styled.div`
+height: 16px;
+`
+const Center = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+`
 
 const Tag:React.FC = ()=>{
   const {findTag} = useTags();
@@ -29,14 +44,22 @@ const Tag:React.FC = ()=>{
         <span>编辑标签页</span>
         <span> </span>
       </Topbar>
-      <div>
-        <Input label="标签名" placeholder={"目前没有标签名哦~"} defaultValue={tag.name}/>
-      </div>
-     <div>
+      <InputWrapper>
+        <Input label="标签名" type="text"
+               placeholder={"目前没有标签名哦~"}
+               value={tag.name}
+
+        />
+      </InputWrapper>
+      <Space/>
+      <Space/>
+      <Space/>
+      <Center>
        <Button>
           删除标签
        </Button>
-     </div>
+     </Center>
+    <Space/>
     </Layout>
   )
 }
