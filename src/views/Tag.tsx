@@ -25,12 +25,43 @@ const InputWrapper = styled.div`
  margin-top: 8px;
  border-radius: 5%;
 `
-
+const IconWrapper = styled.div`
+  padding: 60px 0;
+  .icon{
+  width: 60px;
+  height: 60px;
+  }
+`
 
 const Tag:React.FC = ()=>{
-  const {findTag , updateTag} = useTags();
+  const {findTag , updateTag,deleteTag} = useTags();
   let{id:idString} = useParams<Params>();
   const tag = findTag(parseInt(idString));
+  const tagContent = (tag: { id: number; name: string })=>(
+      <div>
+         <InputWrapper>
+              <Input label="标签名" type="text"
+               placeholder={"目前没有标签名哦~"}
+               value={tag.name}
+               onChange={(e)=>{
+               updateTag(tag.id,{name:e.target.value})
+            }}
+           />
+          </InputWrapper>
+          <Space/>
+          <Space/>
+          <Space/>
+          <Center>
+           <Button onClick = {()=>{
+              deleteTag(tag.id);
+            }}>
+              删除标签
+           </Button>
+           </Center>
+           <Space/>
+      </div>
+
+  )
   return (
     <Layout>
       <Topbar>
@@ -38,24 +69,7 @@ const Tag:React.FC = ()=>{
         <span>编辑标签页</span>
         <span> </span>
       </Topbar>
-      <InputWrapper>
-        <Input label="标签名" type="text"
-               placeholder={"目前没有标签名哦~"}
-               value={tag.name}
-               onChange={(e)=>{
-                 updateTag(tag.id,{name:e.target.value})
-               }}
-        />
-      </InputWrapper>
-      <Space/>
-      <Space/>
-      <Space/>
-      <Center>
-       <Button>
-          删除标签
-       </Button>
-     </Center>
-    <Space/>
+      {tag ? tagContent(tag) : <Center><IconWrapper><Icon name="crying"/></IconWrapper>tag 不存在</Center>}
     </Layout>
   )
 }
