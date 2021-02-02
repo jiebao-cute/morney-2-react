@@ -5,7 +5,9 @@ import {useParams} from 'react-router-dom';
 import Icon from 'components/Icon';
 import {Button} from 'components/Button';
 import styled from 'styled-components';
-import {Input} from '../components/Input';
+import {Input} from 'components/Input';
+import {Space} from 'components/Space';
+import {Center} from 'components/Center';
 type Params ={
   id:string
 }
@@ -23,15 +25,7 @@ const InputWrapper = styled.div`
  margin-top: 8px;
  border-radius: 5%;
 `
-const  Space = styled.div`
-height: 16px;
-`
-const Center = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-`
+
 
 const Tag:React.FC = ()=>{
   const {findTag} = useTags();
