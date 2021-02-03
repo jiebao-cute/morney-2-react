@@ -10,12 +10,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb5471e6-6c8f-4691-b64e-7fcb5862c011" name="Default Changelist" comment="Icon重复代码模块化">
+    <list default="true" id="cb5471e6-6c8f-4691-b64e-7fcb5862c011" name="Default Changelist" comment="重构收集表单数据">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hooks/useUpdate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hooks/useUpdate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/createId.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/createId.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/useTags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hooks/useTags.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Money.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Money.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Money/NumberPadSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Money/NumberPadSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Money/TagsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Money/TagsSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Tag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Tag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Tags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Tags.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +45,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jiebao\jirengu\morney-2\src\components\hooks" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jiebao\jirengu\morney-2\src\icons" />
     </key>
@@ -53,28 +61,8 @@
       <option name="presentableId" value="Default" />
       <updated>1611122385164</updated>
       <workItem from="1611122386754" duration="3842000" />
-      <workItem from="1611127188177" duration="37935000" />
-    </task>
-    <task id="LOCAL-00001" summary="更新index.html">
-      <created>1611127273185</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1611127273185</updated>
-    </task>
-    <task id="LOCAL-00002" summary="配置css 和JS">
-      <created>1611130347810</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1611130347810</updated>
-    </task>
-    <task id="LOCAL-00003" summary="删除没有用的文件">
-      <created>1611135235336</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1611135235336</updated>
+      <workItem from="1611127188177" duration="76807000" />
+      <workItem from="1612168853410" duration="47089000" />
     </task>
     <task id="LOCAL-00004" summary="React Router CRM  和flex布局来定位导航栏">
       <created>1611155911333</created>
@@ -181,7 +169,245 @@
       <option name="project" value="LOCAL" />
       <updated>1611733255747</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="money之TagsSection UI完成">
+      <created>1611736764801</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1611736764801</updated>
+    </task>
+    <task id="LOCAL-00020" summary="money之NoteSection UI完成">
+      <created>1611738348603</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1611738348603</updated>
+    </task>
+    <task id="LOCAL-00021" summary="money之收入支出UI完成">
+      <created>1611743572412</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1611743572412</updated>
+    </task>
+    <task id="LOCAL-00022" summary="money之NumberPad IU完成">
+      <created>1611752411776</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1611752411776</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Money 整个UI完成">
+      <created>1611764660258</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1611764660258</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Money 模块化">
+      <created>1611766363772</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1611766363772</updated>
+    </task>
+    <task id="LOCAL-00025" summary="完成标签的选择和新增">
+      <created>1612067973336</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1612067973336</updated>
+    </task>
+    <task id="LOCAL-00026" summary="完成备注的功能">
+      <created>1612069709724</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1612069709724</updated>
+    </task>
+    <task id="LOCAL-00027" summary="重复初级版本的支出收入功能实现">
+      <created>1612072072140</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1612072072140</updated>
+    </task>
+    <task id="LOCAL-00028" summary="重复升级版本的支出收入功能实现（借用哈希和遍历）">
+      <created>1612072939521</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1612072939521</updated>
+    </task>
+    <task id="LOCAL-00029" summary="最终版本的支出收入功能实现，将哈希中的key拿出来，单独成为一个字符串">
+      <created>1612073482700</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1612073482700</updated>
+    </task>
+    <task id="LOCAL-00030" summary="numberPad 功能 wip(work in process)  拿到number的数值">
+      <created>1612076902179</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1612076902179</updated>
+    </task>
+    <task id="LOCAL-00031" summary="数字面板按钮功能基本完成">
+      <created>1612078345599</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1612078345599</updated>
+    </task>
+    <task id="LOCAL-00032" summary="重构 NumberPadSection.tsx">
+      <created>1612081043845</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1612081043845</updated>
+    </task>
+    <task id="LOCAL-00033" summary="收集表单数据">
+      <created>1612092691154</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1612092691154</updated>
+    </task>
+    <task id="LOCAL-00034" summary="重构收集表单数据">
+      <created>1612104711116</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1612104711116</updated>
+    </task>
+    <task id="LOCAL-00035" summary="抽离useTag函数  作为组件">
+      <created>1612170928386</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1612170928386</updated>
+    </task>
+    <task id="LOCAL-00036" summary="tag list 样式做完">
+      <created>1612175647745</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1612175647745</updated>
+    </task>
+    <task id="LOCAL-00037" summary="创建 /tags/:tag 路由，学会 exact 的用法">
+      <created>1612179056808</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1612179056808</updated>
+    </task>
+    <task id="LOCAL-00038" summary="重构：将 tag:string 重构为 tag:{id:number;name:string}">
+      <created>1612183914481</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1612183914481</updated>
+    </task>
+    <task id="LOCAL-00039" summary="创建 createId，让 id 自增">
+      <created>1612185361761</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1612185361761</updated>
+    </task>
+    <task id="LOCAL-00040" summary="将跳转页面改为ID ,解决默认ID会不停增加的bug">
+      <created>1612187054838</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1612187054838</updated>
+    </task>
+    <task id="LOCAL-00041" summary="封装 findTag 到 useTags 里">
+      <created>1612189332316</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1612189332316</updated>
+    </task>
+    <task id="LOCAL-00042" summary="tag.tsx 页面 完成">
+      <created>1612245274120</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1612245274120</updated>
+    </task>
+    <task id="LOCAL-00043" summary="抽离Input.tsx文件，全局使用">
+      <created>1612252277551</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1612252277551</updated>
+    </task>
+    <task id="LOCAL-00044" summary="将NoteSection.tsx里面的input从非受控组件改为受控组件">
+      <created>1612253702649</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1612253702649</updated>
+    </task>
+    <task id="LOCAL-00045" summary="tag.tsx样式完成">
+      <created>1612256478344</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1612256478344</updated>
+    </task>
+    <task id="LOCAL-00046" summary="抽离center,Space组件">
+      <created>1612258943175</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1612258943175</updated>
+    </task>
+    <task id="LOCAL-00047" summary="编辑 tag 名">
+      <created>1612266264620</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1612266264621</updated>
+    </task>
+    <task id="LOCAL-00048" summary="tag页面的删除标签">
+      <created>1612268681917</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1612268681917</updated>
+    </task>
+    <task id="LOCAL-00049" summary="重构：tag页面的删除标签实现代码更简洁">
+      <created>1612269459397</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1612269459397</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Icon支持onclick&amp;回退功能">
+      <created>1612274967519</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1612274967520</updated>
+    </task>
+    <task id="LOCAL-00051" summary="封装sddTag方法">
+      <created>1612327961493</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1612327961493</updated>
+    </task>
+    <task id="LOCAL-00052" summary="数据传入localStorage里">
+      <created>1612347607339</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1612347607339</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,27 +423,35 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="更新index.html" />
-    <MESSAGE value="配置css 和JS" />
-    <MESSAGE value="删除没有用的文件" />
-    <MESSAGE value="React Router CRM  和flex布局来定位导航栏" />
-    <MESSAGE value="解决字体问题，引用黑体" />
-    <MESSAGE value="行高和阴影" />
-    <MESSAGE value="模块化Nav标签" />
-    <MESSAGE value="引入图片" />
-    <MESSAGE value="yarn eject" />
-    <MESSAGE value="配置loder和搞定三个icons" />
-    <MESSAGE value="Icon重复代码模块化" />
-    <MESSAGE value="创建ICon组件" />
-    <MESSAGE value="创建Layout组件" />
-    <MESSAGE value="创建Views目录" />
-    <MESSAGE value="修复Nav点击区域过小的问题" />
-    <MESSAGE value="当前路由图标自动高亮" />
-    <MESSAGE value="更改颜色" />
-    <MESSAGE value="money页面内容填充完" />
-    <option name="LAST_COMMIT_MESSAGE" value="money页面内容填充完" />
+    <MESSAGE value="重复升级版本的支出收入功能实现（借用哈希和遍历）" />
+    <MESSAGE value="最终版本的支出收入功能实现，将哈希中的key拿出来，单独成为一个字符串" />
+    <MESSAGE value="numberPad 功能 wip(work in process)  拿到number的数值" />
+    <MESSAGE value="数字面板按钮功能基本完成" />
+    <MESSAGE value="重构 NumberPadSection.tsx" />
+    <MESSAGE value="收集表单数据" />
+    <MESSAGE value="重构收集表单数据" />
+    <MESSAGE value="抽离useTag函数  作为组件" />
+    <MESSAGE value="tag list 样式做完" />
+    <MESSAGE value="创建 /tags/:tag 路由，学会 exact 的用法" />
+    <MESSAGE value="重构：将 tag:string 重构为 tag:{id:number;name:string}" />
+    <MESSAGE value="创建 createId，让 id 自增" />
+    <MESSAGE value="将跳转页面改为ID ,解决默认ID会不停增加的bug" />
+    <MESSAGE value="封装 findTag 到 useTags 里" />
+    <MESSAGE value="tag.tsx 页面 完成" />
+    <MESSAGE value="抽离Input.tsx文件，全局使用" />
+    <MESSAGE value="将NoteSection.tsx里面的input从非受控组件改为受控组件" />
+    <MESSAGE value="tag.tsx样式完成" />
+    <MESSAGE value="抽离center,Space组件" />
+    <MESSAGE value="编辑 tag 名" />
+    <MESSAGE value="tag页面的删除标签" />
+    <MESSAGE value="重构：tag页面的删除标签实现代码更简洁" />
+    <MESSAGE value="Icon支持onclick&amp;回退功能" />
+    <MESSAGE value="封装sddTag方法" />
+    <MESSAGE value="数据传入localStorage里" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据传入localStorage里" />
   </component>
   <component name="WindowStateProjectService">
     <state x="534" y="38" key="#Inspections" timestamp="1611127843839">
@@ -232,21 +466,33 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="152" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1611135059659" />
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1611245481140">
+    <state x="93" y="93" width="1095" height="495" maximized="true" key="DiffContextDialog" timestamp="1612252886638">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1611245481140" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1611215393593">
+    <state x="93" y="93" width="1095" height="495" maximized="true" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1612252886638" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1612252242667">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1611215393593" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1612252242667" />
     <state x="110" y="0" key="SettingsEditor" timestamp="1611221074472">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="110" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1611221074472" />
-    <state x="529" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1611201743067">
+    <state x="466" y="77" key="Vcs.Push.Dialog.v2" timestamp="1612175411888">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="529" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1611201743067" />
+    <state x="466" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1612175411888" />
+    <state x="659" y="115" width="527" height="453" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1612077253740">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="659" y="115" width="527" height="453" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1612077253740" />
+    <state x="573" y="79" width="707" height="528" key="find.popup" timestamp="1612357486196">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="573" y="79" width="707" height="528" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1612357486196" />
+    <state x="529" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1612175404107">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="529" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1612175404107" />
   </component>
 </project>
