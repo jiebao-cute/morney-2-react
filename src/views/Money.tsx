@@ -30,16 +30,14 @@ function Money() {
     })
   }
   const {records,addRecord }= useRecords()
-  console.log('records');
-  console.log(records);
   const submit =()=>{
-    addRecord(selected);
-    alert('小可爱保存成功啦')
-    setSelected(defaultFormData);
+    if(addRecord(selected)){
+      alert('小可爱保存成功啦')
+    }
+     setSelected(defaultFormData);
   }
   return(
     <MyLayout>
-      {JSON.stringify(selected)}
        <TagsSection
          value={selected.tagIds}
          onChange={(tagIds)=> onChange({tagIds})}
