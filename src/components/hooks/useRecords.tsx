@@ -8,12 +8,7 @@ type RecordItem = {
   amount:number
   createdAt:string
 }
-type newRecordItem = {
-  tagIds:number[]
-  note:string
-  category:'-'|'+'
-  amount:number
-}
+type newRecordItem = Omit<RecordItem, 'createdAt'>//继承RecordItem但是除去createdAt
 export const useRecords = () =>{
   const [records,setRecord] = useState<RecordItem[]>([])
   useEffect(()=>{
