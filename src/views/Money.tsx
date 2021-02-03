@@ -5,6 +5,8 @@ import {TagsSection} from './Money/TagsSection';
 import {NoteSection} from './Money/NoteSection';
 import {CategorySection} from './Money/CategorySection';
 import {NumberPadSection} from './Money/NumberPadSection';
+import {useRecords} from '../components/hooks/useRecords';
+
 
 
 const MyLayout = styled(Layout)`
@@ -26,6 +28,12 @@ function Money() {
       ...obj
     })
   }
+  const {records,addRecord }= useRecords()
+  console.log('records');
+  console.log(records);
+  const submit =()=>{
+    addRecord(selected);
+  }
   return(
     <MyLayout>
       {JSON.stringify(selected)}
@@ -44,7 +52,7 @@ function Money() {
          <NumberPadSection
           value={selected.amount}
           onChange={(amount)=> onChange({amount})}
-          onOk={()=>{}}
+          onOk={submit}
          />
     </MyLayout>
   )
