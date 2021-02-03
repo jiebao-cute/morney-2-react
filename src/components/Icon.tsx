@@ -7,7 +7,7 @@ try{
 
 type Props = {
   name?: string
-} & React.SVGAttributes<SVGSVGElement>
+} & React.SVGAttributes<SVGElement>
 
 const Icon =(props:Props)=> {
   const { name,children,className, ...rest} = props
