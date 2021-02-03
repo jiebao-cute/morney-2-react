@@ -14,14 +14,15 @@ display: flex;
 flex-direction: column;
 `
 type Category = '+'|'-'
+const defaultFormData = {
+  tagIds:[] as number[],
+  note:'',
+  category:'-' as Category,
+  amount: 0
+}
 
 function Money() {
-  const [selected,setSelected] = useState({
-    tagIds:[] as number[],
-    note:'',
-    category:'-' as Category,
-    amount: 0
-  })
+  const [selected,setSelected] = useState(defaultFormData)
   const onChange = (obj: Partial<typeof selected>) => {
     setSelected({
       ...selected,
@@ -33,6 +34,8 @@ function Money() {
   console.log(records);
   const submit =()=>{
     addRecord(selected);
+    alert('小可爱保存成功啦')
+    setSelected(defaultFormData);
   }
   return(
     <MyLayout>
