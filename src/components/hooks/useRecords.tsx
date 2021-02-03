@@ -6,6 +6,13 @@ type RecordItem = {
   note:string
   category:'-'|'+'
   amount:number
+  createdAt:string
+}
+type newRecordItem = {
+  tagIds:number[]
+  note:string
+  category:'-'|'+'
+  amount:number
 }
 export const useRecords = () =>{
   const [records,setRecord] = useState<RecordItem[]>([])
@@ -15,8 +22,9 @@ export const useRecords = () =>{
   useUpdate(()=>{
     window.localStorage.setItem('records',JSON.stringify(records))
   },[records])
-  const addRecord =(record:RecordItem)=>{
-     setRecord([...records,record]);
+  const addRecord =(newRecord:newRecordItem)=>{
+    const record = {...newRecord,createdAt:(new Date()).toISOString()}
+    setRecord([...records,record]);
   };
 
   return {records,addRecord}
