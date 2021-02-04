@@ -29,7 +29,7 @@ function Money() {
       ...obj
     })
   }
-  const {records,addRecord }= useRecords()
+  const {addRecord }= useRecords()
   const submit =()=>{
     if(addRecord(selected)){
       alert('小可爱保存成功啦')
