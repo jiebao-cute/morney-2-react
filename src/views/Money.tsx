@@ -7,7 +7,9 @@ import {CategorySection} from './Money/CategorySection';
 import {NumberPadSection} from './Money/NumberPadSection';
 import {useRecords} from '../components/hooks/useRecords';
 
-
+const CategoryWrapper = styled.div`
+background: #ffe474;
+`
 
 const MyLayout = styled(Layout)`
 display: flex;
@@ -46,10 +48,12 @@ function Money() {
           value={selected.note}
           onChange={(note)=> onChange({note})}
         />
+      <CategoryWrapper>
         <CategorySection
           value={selected.category}
           onChange={(category)=> onChange({category})}
         />
+      </CategoryWrapper>
          <NumberPadSection
           value={selected.amount}
           onChange={(amount)=> onChange({amount})}

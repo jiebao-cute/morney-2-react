@@ -24,6 +24,8 @@ const InputWrapper = styled.div`
  padding: 0 16px;
  margin-top: 8px;
  border-radius: 5%;
+ box-shadow: inset 0 -5px 5px -5px rgba(0,0,0,0.1),
+                inset 0 5px 5px -5px rgba(0,0,0,0.1);
 `
 const IconWrapper = styled.div`
   padding: 60px 0;

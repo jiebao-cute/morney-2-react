@@ -16,6 +16,8 @@ border-radius: 5%;
   border-bottom: 1px solid whitesmoke;
   line-height: 20px;
   margin-left: 16px; 
+  box-shadow: inset 0 -5px 5px -5px rgba(0,0,0,0.1),
+                inset 0 5px 5px -5px rgba(0,0,0,0.1);
   >a{
   padding: 12px 16px 12px 0;
   display: flex;

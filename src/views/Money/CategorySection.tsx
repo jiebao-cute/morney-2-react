@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import React, {useState} from 'react';
 
+
 const Wrapper = styled.section`
 font-size: 24px;
 > ul{
   display: flex;
-  background: #ffe474;
+  
 >li{
    width: 50%;
    text-align: center;
@@ -46,6 +47,7 @@ const CategorySection:React.FC<Props> = (props) =>{
         )}
       </ul>
     </Wrapper>
+
   )
 }
 export {CategorySection};
