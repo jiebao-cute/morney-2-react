@@ -20,7 +20,7 @@ const  NumberPadSection :React.FC<Props> =(props)=>{
     }else {
       newOutput = output;
     }
-    _setOutput(newOutput);
+    _setOutput(newOutput)
      props.onChange(parseFloat(newOutput));
   }
   const  onClickButtonWrapper =(e:React.MouseEvent)=>{

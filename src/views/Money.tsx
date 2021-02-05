@@ -36,7 +36,7 @@ function Money() {
     if(addRecord(selected)){
       alert('小可爱保存成功啦')
     }
-     setSelected(defaultFormData);
+     setSelected({tagIds: [],note:'',category:'-',amount: 0});
   }
   return(
     <MyLayout>

@@ -1,11 +1,11 @@
 import {useEffect, useState} from 'react';
 import {createId} from 'lib/createId';
 import {useUpdate} from 'components/hooks/useUpdate';
-
 const useTags =() =>{//封装一个自定义hook
-  const [tags,setTags] = useState<{id:number ; name:string}[]>([]);
+  let localTags = JSON.parse(window.localStorage.getItem('tags') || '[]');
+  const [tags,setTags] = useState<{id:number ; name:string}[]>(localTags);
   useEffect(()=>{
-    let localTags = JSON.parse(window.localStorage.getItem('tags') || '[]')
+    //let localTags = JSON.parse(window.localStorage.getItem('tags') || '[]')
     if (localTags.length ===0){
       localTags = [
         {id:createId(),name:'衣服'},
@@ -13,9 +13,11 @@ const useTags =() =>{//封装一个自定义hook
         {id:createId(),name:'家庭消费'},
         {id:createId(),name:'粗去玩~'},
       ]
+
     }
     setTags(localTags);
   },[]);//deps是空数组代表第一次进来就执行
+
   useUpdate(()=>{
     window.localStorage.setItem('tags', JSON.stringify(tags))
   },[tags]);

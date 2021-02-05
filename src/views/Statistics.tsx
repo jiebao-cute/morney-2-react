@@ -1,9 +1,9 @@
 import Layout from '../components/Layout';
-import React, {useState} from 'react';
+import React, {ReactNode, useState} from 'react';
 import {CategorySection} from './Money/CategorySection';
-import {useRecords} from 'components/hooks/useRecords';
+import {RecordItem, useRecords} from 'components/hooks/useRecords';
 import {useTags} from '../components/hooks/useTags';
-
+import day from 'dayjs';
 import styled from 'styled-components';
 const Item = styled.div`
 display: flex;
@@ -28,11 +28,33 @@ box-shadow: inset 0 -5px 5px -5px rgba(0,0,0,0.25),
                 inset 0 5px 5px -5px rgba(0,0,0,0.25);
 background: #ffd700;
 `
+const Header = styled.h3`
+font-size: 18px;
+line-height: 20px;
+padding: 10px 16px;
+`
 
 function Statistics() {
   const [category,setCategory] = useState<'-'|'+'>('-')
   const {records} = useRecords()
   const {getName} = useTags()
+  const selectedRecords = ()=> records.filter(t=>t.category===category)
+  const hash : {[key: string] : RecordItem[]} = {}
+  selectedRecords().forEach(r=>{
+    const key = day(r.createdAt).format('YYYY-MM-DD')
+    if (!(key in hash)){
+      hash[key] = []
+    }
+     hash[key].push(r)
+  })
+  const array = Object.entries(hash)
+    .sort((a,b) => {
+      if (a[0] === b[0]) return 0;
+      if (a[0] > b[0]) return -1;
+      if (a[0] < b[0]) return 1;
+      return 0;
+    })
+
   return(
     <Layout>
      <CategoryWrapper>
@@ -40,23 +62,32 @@ function Statistics() {
         value={category}
         onChange={value=> setCategory(value)}/>
        </CategoryWrapper>
+      {array.map(([date,records])=>
         <div>
-          {records.map(r=>{
-            return<Item>
-              <div className="tags">
-              {r.tagIds.map(tagId => <span>{getName(tagId)}</span>)}
-              </div>
-              {r.note && <div className="note">
-                {r.note}
-              </div>}
-              <div className="amount">
-                  ￥{r.amount}
-              </div>
-
-              {/*{day(r.createdAt).format('YYYY年MM月DD日')}*/}
-            </Item>
-          })}
+        <Header>
+          {date}
+        </Header>
+       <div>
+         {records.map(r=>{
+           return<Item key = {r.createdAt}>
+             <div className="tags">
+               {r.tagIds.map(tagId => <span key={tagId}>{getName(tagId)}</span>)
+                 .reduce((result,span,index,array)=>
+                 result.concat(index < array.length -1 ? [span, '，']:[span]),[] as ReactNode[]
+                 )
+               }
+             </div>
+             {r.note && <div className="note">
+               {r.note}
+             </div>}
+             <div className="amount">
+               ￥{r.amount}
+             </div>
+           </Item>
+         })}
+       </div>
         </div>
+      )}
     </Layout>
   )
 }

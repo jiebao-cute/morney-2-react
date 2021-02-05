@@ -28,7 +28,6 @@ const InputWrapper = styled.div`
                 inset 0 5px 5px -5px rgba(0,0,0,0.1);
 `
 const IconWrapper = styled.div`
-  padding: 60px 0;
   .icon{
   width: 60px;
   height: 60px;
@@ -39,11 +38,12 @@ const Tag:React.FC = ()=>{
   const {findTag , updateTag,deleteTag} = useTags();
   let{id:idString} = useParams<Params>();
   const tag = findTag(parseInt(idString));
+
   const tagContent = (tag: { id: number; name: string })=>(
       <div>
          <InputWrapper>
               <Input label="标签名" type="text"
-               placeholder={"目前没有标签名哦~"}
+               placeholder={"目前没有标签名"}
                value={tag.name}
                onChange={(e)=>{
                updateTag(tag.id,{name:e.target.value})
@@ -68,15 +68,17 @@ const Tag:React.FC = ()=>{
   const onClickBack =()=>{
     history.goBack()
   }
-  return (
-    <Layout>
-      <Topbar>
-        <Icon name="left" onClick = {onClickBack}/>
-        <span>编辑标签页</span>
-        <span> </span>
-      </Topbar>
-      {tag ? tagContent(tag) : <Center><IconWrapper><Icon name="crying"/></IconWrapper>tag 不存在</Center>}
-    </Layout>
-  )
+
+    return (
+      <Layout>
+        <Topbar>
+          <Icon name="left" onClick = {onClickBack}/>
+          <span>编辑标签页</span>
+          <span> </span>
+        </Topbar>
+        {tag?tagContent(tag): <Center><IconWrapper><Icon name="crying"/></IconWrapper>tag 不存在</Center>}
+      </Layout>
+    )
+
 }
 export {Tag}
