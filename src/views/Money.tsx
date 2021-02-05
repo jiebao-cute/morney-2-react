@@ -39,7 +39,7 @@ function Money() {
      setSelected({tagIds: [],note:'',category:'-',amount: 0});
   }
   return(
-    <MyLayout>
+    <MyLayout scrollTop={9999}>
        <TagsSection
          value={selected.tagIds}
          onChange={(tagIds)=> onChange({tagIds})}

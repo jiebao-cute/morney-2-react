@@ -10,7 +10,9 @@ flex-direction: column;
 justify-content: flex-end;
 align-items: flex-start;
 padding: 12px 16px;
->ol{margin: 0 -12px;
+>ol{
+width: 100%;
+margin: 0 -12px;
   >li{
     background:#ffd700;
     border-radius: 18px;
