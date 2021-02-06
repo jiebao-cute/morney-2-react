@@ -2,14 +2,12 @@ import {useEffect, useState} from 'react';
 import {createId} from 'lib/createId';
 import {useUpdate} from 'components/hooks/useUpdate';
 const useTags =() =>{//封装一个自定义hook
-  console.log('渲染了');
-  const defaultTags=JSON.stringify([
+  let localTags = JSON.parse(window.localStorage.getItem('tags') || JSON.stringify([
     {"id":createId(),"name":"衣服"},
     {"id":createId(),"name":"吃饭饭"},
     {"id":createId(),"name":"家庭消费"},
     {"id":createId(),"name":"粗去玩"}
-  ]);
-  let localTags = JSON.parse(window.localStorage.getItem('tags') || defaultTags);
+  ]));
   const [tags,setTags] = useState<{id:number ; name:string}[]>(localTags);
   useEffect(()=>{
     //setTags(localTags)
