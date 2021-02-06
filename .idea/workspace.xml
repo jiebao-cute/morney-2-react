@@ -14,9 +14,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb5471e6-6c8f-4691-b64e-7fcb5862c011" name="Default Changelist" comment="重构收集表单数据">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hooks/useTags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hooks/useTags.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hooks/useUpdate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hooks/useUpdate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Statistics.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Statistics.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,14 +64,7 @@
       <workItem from="1611127188177" duration="76807000" />
       <workItem from="1612168853410" duration="76891000" />
       <workItem from="1612454440600" duration="575000" />
-      <workItem from="1612455030200" duration="46288000" />
-    </task>
-    <task id="LOCAL-00018" summary="money页面内容填充完">
-      <created>1611733255747</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1611733255747</updated>
+      <workItem from="1612455030200" duration="55109000" />
     </task>
     <task id="LOCAL-00019" summary="money之TagsSection UI完成">
       <created>1611736764801</created>
@@ -405,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612524951546</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="创建脚本">
+      <created>1612587513321</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1612587513322</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +428,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tag.tsx 页面 完成" />
     <MESSAGE value="抽离Input.tsx文件，全局使用" />
     <MESSAGE value="将NoteSection.tsx里面的input从非受控组件改为受控组件" />
     <MESSAGE value="tag.tsx样式完成" />
@@ -449,7 +452,8 @@
     <MESSAGE value="展示所有记录.样式解决，tag出现闪屏问题解决" />
     <MESSAGE value="money页面自动滚动到最下方" />
     <MESSAGE value="实现页面展示数据总和" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现页面展示数据总和" />
+    <MESSAGE value="创建脚本" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建脚本" />
   </component>
   <component name="WindowStateProjectService">
     <state x="534" y="38" key="#Inspections" timestamp="1611127843839">

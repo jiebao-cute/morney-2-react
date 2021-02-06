@@ -39,6 +39,7 @@ padding: 10px 16px;
  function Statistics() {
    const [category, setCategory] = useState<'-' | '+'>('-')
    const {records} = useRecords()
+   console.log(records);
    const {getName} = useTags()
    const selectedRecords = () => records.filter(t => t.category === category)
    const hash: { [key: string]: RecordItem[] } = {}
