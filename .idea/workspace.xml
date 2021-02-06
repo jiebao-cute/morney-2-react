@@ -14,16 +14,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb5471e6-6c8f-4691-b64e-7fcb5862c011" name="Default Changelist" comment="重构收集表单数据">
+      <change afterPath="$PROJECT_DIR$/scripts/deploy.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hooks/useRecords.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hooks/useRecords.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/hooks/useTags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hooks/useTags.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hooks/useUpdate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hooks/useUpdate.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Money.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Money.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Money/NumberPadSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Money/NumberPadSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Statistics.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Statistics.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Tag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Tag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/icons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../morney" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
     <property name="ts.external.directory.path" value="C:\Users\jiebao\jirengu\morney-2\node_modules\typescript\lib" />
@@ -67,28 +67,7 @@
       <workItem from="1611127188177" duration="76807000" />
       <workItem from="1612168853410" duration="76891000" />
       <workItem from="1612454440600" duration="575000" />
-      <workItem from="1612455030200" duration="4116000" />
-    </task>
-    <task id="LOCAL-00015" summary="修复Nav点击区域过小的问题">
-      <created>1611221438515</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1611221438515</updated>
-    </task>
-    <task id="LOCAL-00016" summary="当前路由图标自动高亮">
-      <created>1611223865815</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1611223865815</updated>
-    </task>
-    <task id="LOCAL-00017" summary="更改颜色">
-      <created>1611224358339</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1611224358339</updated>
+      <workItem from="1612455030200" duration="41775000" />
     </task>
     <task id="LOCAL-00018" summary="money页面内容填充完">
       <created>1611733255747</created>
@@ -412,7 +391,28 @@
       <option name="project" value="LOCAL" />
       <updated>1612436621136</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="展示所有记录.样式解决，tag出现闪屏问题解决">
+      <created>1612501560897</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1612501560898</updated>
+    </task>
+    <task id="LOCAL-00065" summary="money页面自动滚动到最下方">
+      <created>1612508809726</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1612508809727</updated>
+    </task>
+    <task id="LOCAL-00066" summary="实现页面展示数据总和">
+      <created>1612524951546</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1612524951546</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,9 +431,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="创建 createId，让 id 自增" />
-    <MESSAGE value="将跳转页面改为ID ,解决默认ID会不停增加的bug" />
-    <MESSAGE value="封装 findTag 到 useTags 里" />
     <MESSAGE value="tag.tsx 页面 完成" />
     <MESSAGE value="抽离Input.tsx文件，全局使用" />
     <MESSAGE value="将NoteSection.tsx里面的input从非受控组件改为受控组件" />
@@ -456,7 +453,10 @@
     <MESSAGE value="统计页面的支出收入标签完成" />
     <MESSAGE value="统计页面的支出收入数据收集完成" />
     <MESSAGE value="展示所有记录" />
-    <option name="LAST_COMMIT_MESSAGE" value="展示所有记录" />
+    <MESSAGE value="展示所有记录.样式解决，tag出现闪屏问题解决" />
+    <MESSAGE value="money页面自动滚动到最下方" />
+    <MESSAGE value="实现页面展示数据总和" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现页面展示数据总和" />
   </component>
   <component name="WindowStateProjectService">
     <state x="534" y="38" key="#Inspections" timestamp="1611127843839">
@@ -475,10 +475,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" maximized="true" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1612252886638" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1612252242667">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1612526716749">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1612252242667" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1612526716749" />
     <state x="110" y="0" key="SettingsEditor" timestamp="1612447873196">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

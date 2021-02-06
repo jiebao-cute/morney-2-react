@@ -68,16 +68,19 @@ padding: 10px 16px;
          <div key={date}>
            <Header>
              <span> {date}</span>
-             <span>
+             <div>
                {records.map((r,index)=>{
                  sum = sum + r.amount
                  if(index === records.length -1){
                    const newSum = sum;
                    sum = 0;
                    return newSum;
+                 }else{
+                   return '';
                  }
-               })}
-             </span>
+               })
+               }
+             </div>
            </Header>
            <div>
              {records.map(r => {

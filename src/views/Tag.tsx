@@ -28,6 +28,7 @@ const InputWrapper = styled.div`
                 inset 0 5px 5px -5px rgba(0,0,0,0.1);
 `
 const IconWrapper = styled.div`
+  padding: 80px 0;
   .icon{
   width: 60px;
   height: 60px;
@@ -76,7 +77,7 @@ const Tag:React.FC = ()=>{
           <span>编辑标签页</span>
           <span> </span>
         </Topbar>
-        {tag?tagContent(tag): <Center><IconWrapper><Icon name="crying"/></IconWrapper>tag 不存在</Center>}
+        {tag?tagContent(tag): <Center><IconWrapper><Icon name="crying"/></IconWrapper> 标签已经被删除</Center>}
       </Layout>
     )
 

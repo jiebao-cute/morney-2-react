@@ -2,20 +2,18 @@ import {useEffect, useState} from 'react';
 import {createId} from 'lib/createId';
 import {useUpdate} from 'components/hooks/useUpdate';
 const useTags =() =>{//封装一个自定义hook
-  let localTags = JSON.parse(window.localStorage.getItem('tags') || '[]');
+  const defaultTags=JSON.stringify([
+    {"id":createId(),"name":"衣服"},
+    {"id":createId(),"name":"吃饭饭"},
+    {"id":createId(),"name":"家庭消费"},
+    {"id":createId(),"name":"粗去玩"}
+  ]);
+
+  let localTags = JSON.parse(window.localStorage.getItem('tags') || defaultTags);
   const [tags,setTags] = useState<{id:number ; name:string}[]>(localTags);
   useEffect(()=>{
-    //let localTags = JSON.parse(window.localStorage.getItem('tags') || '[]')
-    if (localTags.length ===0){
-      localTags = [
-        {id:createId(),name:'衣服'},
-        {id:createId(),name:'吃饭饭'},
-        {id:createId(),name:'家庭消费'},
-        {id:createId(),name:'粗去玩~'},
-      ]
-
-    }
-    setTags(localTags);
+    //setTags(localTags)
+    setTags((localTags)=>([...localTags]));
   },[]);//deps是空数组代表第一次进来就执行
 
   useUpdate(()=>{
@@ -42,7 +40,7 @@ const useTags =() =>{//封装一个自定义hook
     const tagName = window.prompt('新标签的名字为');
     if(tagName !== null){
       if (tagName === '') {
-        window.prompt('新标签的名字不可以是空的哦~');
+        window.prompt('新标签的名字不可以是空');
       } else {
         setTags([...tags, {id: createId(), name: tagName}]);
       }

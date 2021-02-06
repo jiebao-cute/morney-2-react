@@ -34,7 +34,7 @@ function Money() {
   const {addRecord }= useRecords()
   const submit =()=>{
     if(addRecord(selected)){
-      alert('小可爱保存成功啦')
+      alert('保存成功，记得清空数字面板')
     }
      setSelected({tagIds: [],note:'',category:'-',amount: 0});
   }
