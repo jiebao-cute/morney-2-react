@@ -14,9 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb5471e6-6c8f-4691-b64e-7fcb5862c011" name="Default Changelist" comment="重构收集表单数据">
+      <change afterPath="$PROJECT_DIR$/scripts/deploy_gitee.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hooks/useTags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hooks/useTags.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/deploy_github.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,14 +62,7 @@
       <workItem from="1611127188177" duration="76807000" />
       <workItem from="1612168853410" duration="76891000" />
       <workItem from="1612454440600" duration="575000" />
-      <workItem from="1612455030200" duration="55859000" />
-    </task>
-    <task id="LOCAL-00020" summary="money之NoteSection UI完成">
-      <created>1611738348603</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1611738348603</updated>
+      <workItem from="1612455030200" duration="57569000" />
     </task>
     <task id="LOCAL-00021" summary="money之收入支出UI完成">
       <created>1611743572412</created>
@@ -405,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612598951952</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="修改bug 内存里面的idmax再每次切换页面的时候都会增加">
+      <created>1612599772632</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1612599772633</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +426,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="将NoteSection.tsx里面的input从非受控组件改为受控组件" />
     <MESSAGE value="tag.tsx样式完成" />
     <MESSAGE value="抽离center,Space组件" />
     <MESSAGE value="编辑 tag 名" />
@@ -449,7 +450,8 @@
     <MESSAGE value="实现页面展示数据总和" />
     <MESSAGE value="创建脚本" />
     <MESSAGE value="修改bug 统计页面不出现数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改bug 统计页面不出现数据" />
+    <MESSAGE value="修改bug 内存里面的idmax再每次切换页面的时候都会增加" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改bug 内存里面的idmax再每次切换页面的时候都会增加" />
   </component>
   <component name="WindowStateProjectService">
     <state x="534" y="38" key="#Inspections" timestamp="1611127843839">
